@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
+import 'screens/about_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,12 +21,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Saguia',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
       ),
       initialRoute: '/login',
       routes: {
         '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
+        '/about': (context) => const AboutScreen(),
       },
     );
   }

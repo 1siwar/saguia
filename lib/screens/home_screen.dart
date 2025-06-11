@@ -22,7 +22,19 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Text('Welcome, ${user?.email ?? "User"}!'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Welcome, ${user?.email ?? "User"}!'),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/about');
+              },
+              child: const Text('Go to About'),
+            ),
+          ],
+        ),
       ),
     );
   }

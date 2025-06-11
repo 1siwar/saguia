@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
         {
           'email': userCredential.user!.email,
           'lastLogin': FieldValue.serverTimestamp(),
-          // Add other fields as needed, e.g., 'farmId', 'irrigationSettings'
+          // Add irrigation-specific fields if needed
         },
         SetOptions(merge: true),
       );

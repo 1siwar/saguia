@@ -7,54 +7,38 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About AgriConnect'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: const Text('About Saguia'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'About AgriConnect',
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-                color: Colors.green,
-              ),
+              'About Saguia',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             const Text(
-              'AgriConnect is an innovative platform designed to empower farmers and agricultural enthusiasts. Our mission is to provide tools and resources to enhance productivity, share knowledge, and foster sustainable farming practices.',
+              'Saguia is an irrigation management app designed to help farmers optimize water usage and improve crop health. '
+                  'Features include scheduling, water tracking, and more.',
               style: TextStyle(fontSize: 16),
             ),
-            const SizedBox(height: 16),
-            const Text(
-              'Features:',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.green,
-              ),
-            ),
-            const SizedBox(height: 8),
-            const Text('• Upload and analyze agricultural images'),
-            const Text('• Connect with farming communities'),
-            const Text('• Access expert advice and resources'),
             const SizedBox(height: 16),
             const Text(
               'Version: 1.0.0',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 14, color: Colors.grey),
             ),
             const Spacer(),
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.pop(context); // Return to HomeScreen
                 },
                 child: const Text('Back to Home'),
               ),
             ),
+            const SizedBox(height: 16),
           ],
         ),
       ),
