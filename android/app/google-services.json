@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "445735880114",
+    "project_id": "irrigation-597bc",
+    "storage_bucket": "irrigation-597bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445735880114:android:e82554193b073d752650ab",
+        "android_client_info": {
+          "package_name": "com.example.saguia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNAoK5Qb-j2pxLYQw7JLNjiVIZhZPh41s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
