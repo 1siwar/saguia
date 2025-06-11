@@ -26,7 +26,6 @@ class _LoginScreenState extends State<LoginScreen> {
         {
           'email': userCredential.user!.email,
           'lastLogin': FieldValue.serverTimestamp(),
-          // Add irrigation-specific fields if needed
         },
         SetOptions(merge: true),
       );
@@ -35,6 +34,10 @@ class _LoginScreenState extends State<LoginScreen> {
     } on FirebaseAuthException catch (e) {
       setState(() {
         _errorMessage = e.message;
+      });
+    } catch (e) {
+      setState(() {
+        _errorMessage = 'An unexpected error occurred: $e';
       });
     }
   }

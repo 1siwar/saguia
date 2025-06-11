@@ -85,4 +85,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'irrigation-597bc.firebasestorage.app',
     measurementId: 'G-JZC9D4WWCC',
   );
+
 }
